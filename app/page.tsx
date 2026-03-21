@@ -40,7 +40,7 @@ import { buttonVariants } from "@/lib/button-variants";
 export const metadata = createMetadata({
   title: "DLSS 5 Guide, Release Date, Supported Games, and FAQ",
   description:
-    "A source-backed DLSS 5 keyword site covering the official release timing, features, neural rendering model, announced games, and DLSS 4.5 comparisons.",
+    "A source-backed DLSS 5 guide covering release timing, neural rendering, official features, announced games, and DLSS 4.5 comparisons.",
   path: "/",
   keywords: ["DLSS 5 guide", "DLSS 5 overview", "DLSS 5 FAQ"],
   type: "website",
@@ -64,7 +64,7 @@ export default function HomePage() {
               </div>
 
               <h1 className="mt-5 font-heading text-4xl font-semibold tracking-tight text-balance sm:text-5xl lg:text-7xl">
-                DLSS 5, tracked like a signal desk instead of a rumor mill.
+                DLSS 5 guide: release date, games, and what NVIDIA announced.
               </h1>
 
               <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
@@ -82,7 +82,7 @@ export default function HomePage() {
                     "rounded-full px-5"
                   )}
                 >
-                  Start with the explainer
+                  Read what DLSS 5 is
                 </Link>
                 <Link
                   href="/dlss-5-supported-games"
@@ -91,7 +91,7 @@ export default function HomePage() {
                     "rounded-full px-5"
                   )}
                 >
-                  Open the game tracker
+                  See supported DLSS 5 games
                 </Link>
               </div>
 
@@ -163,7 +163,7 @@ export default function HomePage() {
                     href={page.href}
                     className="inline-flex items-center gap-2 text-sm font-medium text-primary"
                   >
-                    Open page <ArrowRight className="size-4" />
+                    Read {page.navTitle} <ArrowRight className="size-4" />
                   </Link>
                 </CardContent>
               </Card>

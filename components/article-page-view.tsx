@@ -315,7 +315,8 @@ export function ArticlePageView({ page }: ArticlePageViewProps) {
                         {relatedPage.description}
                       </p>
                       <span className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-primary">
-                        Open page <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                        Read {relatedPage.navTitle}{" "}
+                        <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                       </span>
                     </Link>
                   ))}

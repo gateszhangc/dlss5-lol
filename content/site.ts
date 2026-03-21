@@ -6,7 +6,7 @@ export const SITE_PROJECT_NAME =
 export const SITE_URL =
   process.env.NEXT_PUBLIC_WEB_URL?.replace(/\/$/, "") || DEFAULT_SITE_URL;
 export const SITE_DESCRIPTION =
-  "An independent, English-language reference site tracking NVIDIA DLSS 5, its release timing, core features, announced games, and the shift from DLSS 4.5 to neural rendering.";
+  "An independent, English-language guide tracking NVIDIA DLSS 5, its release timing, core features, announced games, and the shift from DLSS 4.5 to neural rendering.";
 
 export const SITE_KEYWORDS = [
   "DLSS 5",
@@ -423,9 +423,9 @@ export const articlePages: ArticlePage[] = [
     href: "/what-is-dlss-5",
     navTitle: "What Is DLSS 5",
     title: "What Is DLSS 5?",
-    metaTitle: "What Is DLSS 5? NVIDIA's Neural Rendering Shift Explained",
+    metaTitle: "What Is DLSS 5? Official NVIDIA Guide",
     description:
-      "Understand what DLSS 5 is, how NVIDIA describes it, and why the company now positions DLSS as a neural rendering system instead of only a performance feature.",
+      "What DLSS 5 is, how NVIDIA describes it, and why it now positions DLSS as a neural rendering system instead of only a performance feature.",
     eyebrow: "Foundation",
     summary:
       "NVIDIA presents DLSS 5 as a real-time neural rendering model that brings photoreal lighting and material detail into gameplay while keeping the result deterministic and controllable for game studios.",
@@ -476,7 +476,7 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-release-date",
     navTitle: "Release Date",
     title: "DLSS 5 Release Date",
-    metaTitle: "DLSS 5 Release Date: What NVIDIA Has Officially Confirmed",
+    metaTitle: "DLSS 5 Release Date: Fall 2026 Window",
     description:
       "Track the exact DLSS 5 announcement date, NVIDIA's public launch window, and what is still unconfirmed about rollout timing.",
     eyebrow: "Timing",
@@ -527,9 +527,9 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-features",
     navTitle: "Features",
     title: "DLSS 5 Features",
-    metaTitle: "DLSS 5 Features: Photoreal Lighting, Materials, and Artist Controls",
+    metaTitle: "DLSS 5 Features: Official Key Changes",
     description:
-      "A focused look at the official DLSS 5 feature set: neural rendering, photoreal materials, masking controls, 4K real-time output, and Streamline integration.",
+      "Official DLSS 5 features from NVIDIA: neural rendering, photoreal materials, masking controls, 4K real-time output, and Streamline integration.",
     eyebrow: "Features",
     summary:
       "NVIDIA's public feature story for DLSS 5 centers on photoreal lighting and materials, frame-to-frame consistency, detailed artist controls, and compatibility with the existing Streamline integration path.",
@@ -573,7 +573,7 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-neural-rendering",
     navTitle: "Neural Rendering",
     title: "DLSS 5 Neural Rendering",
-    metaTitle: "DLSS 5 Neural Rendering: How NVIDIA Says It Works",
+    metaTitle: "DLSS 5 Neural Rendering Explained",
     description:
       "See how NVIDIA describes DLSS 5 neural rendering, from color and motion vector inputs to scene understanding and frame-consistent photoreal output.",
     eyebrow: "Technology",
@@ -621,7 +621,7 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-supported-games",
     navTitle: "Supported Games",
     title: "DLSS 5 Supported Games",
-    metaTitle: "DLSS 5 Supported Games: Every Announced Title So Far",
+    metaTitle: "DLSS 5 Supported Games: Official List",
     description:
       "A clean list of every game NVIDIA has publicly named for DLSS 5 so far, plus notes on what confirmed support actually means.",
     eyebrow: "Games",
@@ -666,7 +666,7 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-confirmed-partners",
     navTitle: "Confirmed Partners",
     title: "DLSS 5 Confirmed Partners",
-    metaTitle: "DLSS 5 Confirmed Partners: Publishers and Studios Backing the Rollout",
+    metaTitle: "DLSS 5 Confirmed Partners: Official Studio List",
     description:
       "Track the publishers and studios NVIDIA has publicly named as DLSS 5 partners, including Bethesda, CAPCOM, Ubisoft, and Warner Bros. Games.",
     eyebrow: "Ecosystem",
@@ -706,7 +706,7 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-vs-dlss-4-5",
     navTitle: "DLSS 5 vs 4.5",
     title: "DLSS 5 vs DLSS 4.5",
-    metaTitle: "DLSS 5 vs DLSS 4.5: What Changed In NVIDIA's 2026 Roadmap",
+    metaTitle: "DLSS 5 vs DLSS 4.5: Key Differences",
     description:
       "Compare DLSS 5 and DLSS 4.5 across positioning, rendering goals, inputs, integration, and launch status using NVIDIA's own 2026 language.",
     eyebrow: "Comparison",
@@ -747,7 +747,7 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-vs-dlss-4",
     navTitle: "DLSS 5 vs 4",
     title: "DLSS 5 vs DLSS 4",
-    metaTitle: "DLSS 5 vs DLSS 4: Broad Generation Comparison For Searchers",
+    metaTitle: "DLSS 5 vs DLSS 4: What's Different?",
     description:
       "A higher-level comparison for people searching DLSS 5 vs DLSS 4, with notes on where DLSS 4.5 fits into the picture.",
     eyebrow: "Comparison",
@@ -788,9 +788,9 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-faq",
     navTitle: "FAQ",
     title: "DLSS 5 FAQ",
-    metaTitle: "DLSS 5 FAQ: Official Answers, Release Timing, Games, and Comparison",
+    metaTitle: "DLSS 5 FAQ: Release Date, Games, Support",
     description:
-      "A clean FAQ page for the biggest DLSS 5 questions: official status, release timing, supported games, compatibility uncertainty, and how it compares with DLSS 4.5.",
+      "Source-backed answers on DLSS 5 official status, release timing, supported games, compatibility uncertainty, and DLSS 4.5 comparisons.",
     eyebrow: "FAQ",
     summary:
       "This FAQ consolidates the highest-intent DLSS 5 questions into short, source-backed answers built from NVIDIA's current public information.",

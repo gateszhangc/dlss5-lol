@@ -144,7 +144,7 @@ export function HomeExplorer({
                 href="/dlss-5-supported-games"
                 className={cn(buttonVariants({ size: "sm" }), "rounded-full px-4")}
               >
-                Open the games guide
+                Read the supported games list
               </Link>
             </div>
           </CardContent>
