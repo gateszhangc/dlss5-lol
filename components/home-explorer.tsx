@@ -44,20 +44,20 @@ export function HomeExplorer({
     <Tabs defaultValue="briefing" className="gap-6">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="eyebrow">Live briefing</p>
+          <p className="eyebrow">DLSS 5 Overview</p>
           <h2 className="font-heading text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-            Read the signal, not the noise.
+            DLSS 5 Timeline, Supported Games, and Partners
           </h2>
         </div>
         <TabsList variant="line" className="rounded-full border border-border/70 bg-card/70 p-1">
           <TabsTrigger value="briefing" className="rounded-full px-4">
-            Briefing
+            Timeline
           </TabsTrigger>
           <TabsTrigger value="games" className="rounded-full px-4">
-            Games
+            Supported Games
           </TabsTrigger>
           <TabsTrigger value="partners" className="rounded-full px-4">
-            Partners
+            Confirmed Partners
           </TabsTrigger>
         </TabsList>
       </div>
@@ -65,7 +65,7 @@ export function HomeExplorer({
       <TabsContent value="briefing" className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
         <Card className="surface-card">
           <CardHeader>
-            <CardTitle>Current DLSS 5 timeline</CardTitle>
+            <CardTitle>DLSS 5 Release Timeline</CardTitle>
             <CardDescription>
               The shortest path from early DLSS history to the current 2026 roadmap.
             </CardDescription>
@@ -113,7 +113,7 @@ export function HomeExplorer({
       <TabsContent value="games">
         <Card className="surface-card">
           <CardHeader>
-            <CardTitle>Announced games so far</CardTitle>
+            <CardTitle>DLSS 5 Supported Games Announced So Far</CardTitle>
             <CardDescription>
               Every title below was named by NVIDIA in public DLSS 5 launch materials.
             </CardDescription>

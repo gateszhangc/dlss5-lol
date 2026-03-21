@@ -6,13 +6,37 @@ test("homepage exposes the core keyword and descriptive internal links", async (
   await page.goto("/");
 
   await expect(page).toHaveTitle(
-    "DLSS 5 Guide: Release Date, Supported Games, FAQ"
+    "DLSS 5 Release Date, Supported Games, FAQ"
   );
   await expect(
     page.getByRole("heading", {
       level: 1,
-      name: "DLSS 5 guide: release date, supported games, and FAQ.",
+      name: "DLSS 5 Release Date, Supported Games, and FAQ",
     })
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      level: 2,
+      name: "DLSS 5 Timeline, Supported Games, and Partners",
+    })
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      level: 2,
+      name: "DLSS 5 Guides: Features, Games, Comparisons, and FAQ",
+    })
+  ).toBeVisible();
+  await expect(page.getByText("DLSS 5 Release Timeline")).toBeVisible();
+  await expect(page.getByText("DLSS 5 vs DLSS 4.5: Key Differences")).toBeVisible();
+  await expect(
+    page.getByText("DLSS 5 FAQ: Release Date, Games, and Support")
+  ).toBeVisible();
+  await expect(page.getByRole("tab", { name: "Timeline" })).toBeVisible();
+  await expect(page.getByRole("tab", { name: "Supported Games" })).toBeVisible();
+  await expect(page.getByRole("tab", { name: "Confirmed Partners" })).toBeVisible();
+  await page.getByRole("tab", { name: "Supported Games" }).click();
+  await expect(
+    page.getByText("DLSS 5 Supported Games Announced So Far")
   ).toBeVisible();
   await expect(
     page.getByRole("link", { name: "What Is DLSS 5?", exact: true })
