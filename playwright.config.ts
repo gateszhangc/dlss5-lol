@@ -2,6 +2,7 @@ import { defineConfig, devices } from "@playwright/test";
 
 const port = 3310;
 const baseURL = `http://127.0.0.1:${port}`;
+const projectRoot = __dirname;
 
 export default defineConfig({
   testDir: "./tests",
@@ -14,7 +15,8 @@ export default defineConfig({
     trace: "on-first-retry",
   },
   webServer: {
-    command: `HOSTNAME=127.0.0.1 PORT=${port} node .next/standalone/server.js`,
+    command: `sh -c 'set -a; . ./.env.production; set +a; HOSTNAME=127.0.0.1 PORT=${port} npm run start'`,
+    cwd: projectRoot,
     url: baseURL,
     reuseExistingServer: false,
     timeout: 120_000,

@@ -54,3 +54,45 @@ test("key pages keep shorter titles and descriptive related links", async ({
   await expect(page.getByText("Read Neural Rendering")).toBeVisible();
   await expect(page.getByText("Open page")).toHaveCount(0);
 });
+
+test("homepage injects the updated Microsoft Clarity loader", async ({
+  page,
+}) => {
+  const clarityScript = 'script[src="https://www.clarity.ms/tag/vz9jud8zfm"]';
+  const oldClarityScript = 'script[src="https://www.clarity.ms/tag/vz0zembx9t"]';
+
+  await page.goto("/", { waitUntil: "networkidle" });
+
+  await expect(page.locator(clarityScript)).toHaveCount(1);
+  await expect(page.locator(oldClarityScript)).toHaveCount(0);
+});
+
+test("homepage exposes the new brand mark and icon assets", async ({
+  page,
+  request,
+}) => {
+  await page.goto("/", { waitUntil: "networkidle" });
+
+  const faviconLink = page.locator('link[rel="icon"][href^="/favicon.ico?"]');
+  const iconLink = page.locator('link[rel="icon"][href^="/icon.png?"]');
+  const appleIconLink = page.locator(
+    'link[rel="apple-touch-icon"][href^="/apple-icon.png?"]'
+  );
+
+  await expect(page.locator('header img[src="/brand/dlss5-mark.svg"]')).toBeVisible();
+  await expect(faviconLink).toHaveCount(1);
+  await expect(iconLink).toHaveCount(1);
+  await expect(appleIconLink).toHaveCount(1);
+
+  const assetPaths = [
+    "/brand/dlss5-mark.svg",
+    await faviconLink.first().getAttribute("href"),
+    await iconLink.first().getAttribute("href"),
+    await appleIconLink.first().getAttribute("href"),
+  ].filter((value): value is string => Boolean(value));
+
+  for (const path of assetPaths) {
+    const response = await request.get(path);
+    expect(response.ok(), `${path} should resolve`).toBeTruthy();
+  }
+});
