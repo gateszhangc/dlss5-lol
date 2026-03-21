@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 declare global {
   interface Window {
-    dataLayer?: unknown[];
+    dataLayer?: unknown[][];
     gtag?: (
       command: "config" | "event" | "js",
       targetId: string | Date,
@@ -24,18 +24,40 @@ export function AnalyticsPageView({
   const pathname = usePathname();
 
   useEffect(() => {
-    if (!measurementId || !pathname || typeof window.gtag !== "function") {
+    if (!measurementId || !pathname) {
       return;
     }
 
-    const search = window.location.search || "";
-    const pagePath = `${pathname}${search}`;
+    const sendPageView = () => {
+      if (typeof window.gtag !== "function") {
+        return false;
+      }
 
-    window.gtag("config", measurementId, {
-      page_path: pagePath,
-      page_location: window.location.href,
-      page_title: document.title,
-    });
+      const search = window.location.search || "";
+      const pagePath = `${pathname}${search}`;
+
+      window.gtag("config", measurementId, {
+        page_path: pagePath,
+        page_location: window.location.href,
+        page_title: document.title,
+      });
+
+      return true;
+    };
+
+    if (sendPageView()) {
+      return;
+    }
+
+    const intervalId = window.setInterval(() => {
+      if (sendPageView()) {
+        window.clearInterval(intervalId);
+      }
+    }, 200);
+
+    return () => {
+      window.clearInterval(intervalId);
+    };
   }, [measurementId, pathname]);
 
   return null;
