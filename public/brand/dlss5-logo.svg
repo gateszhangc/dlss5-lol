@@ -1,0 +1,42 @@
+<svg width="760" height="180" viewBox="0 0 760 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="180" rx="36" fill="#F7FAF6"/>
+  <rect x="1.5" y="1.5" width="757" height="177" rx="34.5" stroke="#DDE8DD" stroke-width="3"/>
+  <svg x="34" y="34" width="112" height="112" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="logo-bg" x1="14" y1="10" x2="86" y2="88" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#091712"/>
+        <stop offset="0.58" stop-color="#10261B"/>
+        <stop offset="1" stop-color="#194631"/>
+      </linearGradient>
+      <radialGradient id="logo-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 22) rotate(47.4902) scale(64.8716)">
+        <stop offset="0" stop-color="#D7FF83" stop-opacity="0.3"/>
+        <stop offset="0.45" stop-color="#8DE767" stop-opacity="0.08"/>
+        <stop offset="1" stop-color="#8DE767" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="logo-accent" x1="24" y1="24" x2="73" y2="77" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#E2FF9E"/>
+        <stop offset="0.52" stop-color="#A9F76B"/>
+        <stop offset="1" stop-color="#5FE06C"/>
+      </linearGradient>
+      <linearGradient id="logo-ring" x1="18" y1="16" x2="78" y2="78" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#EBFFB4" stop-opacity="0.88"/>
+        <stop offset="1" stop-color="#7CF1AA" stop-opacity="0.36"/>
+      </linearGradient>
+    </defs>
+    <rect x="4" y="4" width="88" height="88" rx="26" fill="url(#logo-bg)"/>
+    <rect x="4" y="4" width="88" height="88" rx="26" fill="url(#logo-glow)"/>
+    <rect x="6" y="6" width="84" height="84" rx="24" stroke="#F2FFD9" stroke-opacity="0.12" stroke-width="2"/>
+    <path d="M23 28C29 20 40 16 52 17C61 17 69 20 75 27" stroke="url(#logo-ring)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M70 33C75 39 78 47 77 56C76 68 68 79 56 84" stroke="url(#logo-ring)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M27 27H67V38H39V48H54C66 48 74 55 74 66C74 79 65 87 51 87H25V75H51C57 75 61 71 61 66C61 60 58 57 52 57H27V27Z" fill="url(#logo-accent)"/>
+    <path d="M58 30L73 36L50 59L40 53L58 30Z" fill="#0A1712" fill-opacity="0.42"/>
+    <rect x="70" y="25" width="5" height="5" fill="#D9FF8A"/>
+    <rect x="76" y="31" width="4" height="4" fill="#AFFF88" fill-opacity="0.92"/>
+    <rect x="71" y="37" width="3.5" height="3.5" fill="#82F6B7" fill-opacity="0.82"/>
+    <circle cx="22" cy="74" r="2" fill="#F3FFD6" fill-opacity="0.36"/>
+    <circle cx="29" cy="77" r="1.5" fill="#F3FFD6" fill-opacity="0.28"/>
+  </svg>
+  <text x="176" y="74" fill="#5A6F64" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="18" letter-spacing="0.34em">INDEPENDENT TRACKER</text>
+  <text x="176" y="120" fill="#101A22" font-family="'Space Grotesk', Arial, sans-serif" font-size="46" font-weight="700">DLSS 5 Report</text>
+  <path d="M176 140H434" stroke="#8CE76A" stroke-width="6" stroke-linecap="round" stroke-opacity="0.8"/>
+</svg>

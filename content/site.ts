@@ -6,13 +6,17 @@ export const SITE_PROJECT_NAME =
 export const SITE_URL =
   process.env.NEXT_PUBLIC_WEB_URL?.replace(/\/$/, "") || DEFAULT_SITE_URL;
 export const SITE_DESCRIPTION =
-  "An independent, English-language guide tracking NVIDIA DLSS 5, its release timing, core features, announced games, and the shift from DLSS 4.5 to neural rendering.";
+  "An independent guide to the DLSS 5 release date, supported games, features, and DLSS 4.5 comparisons using official NVIDIA sources.";
 
 export const SITE_KEYWORDS = [
   "DLSS 5",
   "NVIDIA DLSS 5",
   "DLSS 5 release date",
   "DLSS 5 supported games",
+  "what is DLSS 5",
+  "DLSS 5 neural rendering",
+  "DLSS 5 partners",
+  "DLSS 5 FAQ",
   "DLSS 5 vs DLSS 4.5",
   "DLSS 5 vs DLSS 4",
 ];
@@ -423,12 +427,12 @@ export const articlePages: ArticlePage[] = [
     href: "/what-is-dlss-5",
     navTitle: "What Is DLSS 5",
     title: "What Is DLSS 5?",
-    metaTitle: "What Is DLSS 5? Official NVIDIA Guide",
+    metaTitle: "What Is DLSS 5? NVIDIA's Official Answer",
     description:
-      "What DLSS 5 is, how NVIDIA describes it, and why it now positions DLSS as a neural rendering system instead of only a performance feature.",
+      "What DLSS 5 is, how NVIDIA describes neural rendering, and why the company treats it as more than another DLSS performance upgrade.",
     eyebrow: "Foundation",
     summary:
-      "NVIDIA presents DLSS 5 as a real-time neural rendering model that brings photoreal lighting and material detail into gameplay while keeping the result deterministic and controllable for game studios.",
+      "DLSS 5 is NVIDIA's newly announced neural rendering system for games. The company says it adds more photoreal lighting and materials in real time while staying deterministic and controllable.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["what is DLSS 5", "DLSS 5 explained", "NVIDIA DLSS 5 neural rendering"],
     keyFacts: [
@@ -439,10 +443,10 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "DLSS 5 is positioned as more than another DLSS mode",
+        title: "What NVIDIA says DLSS 5 actually is",
         paragraphs: [
-          "NVIDIA is not pitching DLSS 5 as a minor step up in upscaling or frame generation. The official launch message says DLSS 5 changes the role of DLSS itself, moving from a pure performance helper toward a system that meaningfully shapes final image quality.",
-          "That framing matters because it changes what users should look for. The biggest story is not a single benchmark number. It is the idea that lighting, materials, skin, fabric, and other hard-to-render details can be improved in real time by a neural model that understands scene context.",
+          "The shortest answer is that DLSS 5 is NVIDIA's new real-time neural rendering system for games. In the March 16, 2026 announcement, NVIDIA describes it as a step beyond DLSS as mainly a performance feature and toward DLSS as part of final image creation.",
+          "That framing changes what users should focus on. The headline claim is not just a higher frame rate or cleaner upscale. It is that lighting, materials, skin, fabric, and other hard-to-render details can look more realistic in real time through a scene-aware neural model.",
         ],
         bullets: [
           "Officially unveiled at GTC 2026 on March 16, 2026.",
@@ -451,7 +455,7 @@ export const articlePages: ArticlePage[] = [
         ],
       },
       {
-        title: "How NVIDIA says the pipeline works",
+        title: "How DLSS 5 is supposed to work",
         paragraphs: [
           "The company says DLSS 5 takes a game's color information and motion vectors as input, then uses a neural model to infuse the scene with more realistic lighting and materials.",
           "NVIDIA also emphasizes that the result remains anchored to the underlying 3D scene and artistic intent. That is the company's answer to the obvious question: how is this different from unconstrained video generation?",
@@ -460,7 +464,7 @@ export const articlePages: ArticlePage[] = [
           "The official launch message focuses on deterministic output and frame-to-frame consistency, which is crucial for real interactive games.",
       },
       {
-        title: "Why this matters for players and developers",
+        title: "Why DLSS 5 matters for players and studios",
         paragraphs: [
           "For players, the pitch is straightforward: games should look more cinematic without waiting for offline rendering workflows. For developers, the pitch is just as important: the system keeps artist controls for intensity, color grading, and masking instead of asking studios to surrender control to a black-box generator.",
           "NVIDIA says DLSS 5 also uses the same Streamline integration framework already used for DLSS and Reflex. If that holds in shipped games, the upgrade path for partner studios should be more practical than a full rendering rewrite.",
@@ -476,12 +480,12 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-release-date",
     navTitle: "Release Date",
     title: "DLSS 5 Release Date",
-    metaTitle: "DLSS 5 Release Date: Fall 2026 Window",
+    metaTitle: "DLSS 5 Release Date: When Is It Coming Out?",
     description:
-      "Track the exact DLSS 5 announcement date, NVIDIA's public launch window, and what is still unconfirmed about rollout timing.",
+      "DLSS 5 was announced on March 16, 2026, and NVIDIA says it is coming in fall 2026. Here is what is confirmed and what is not.",
     eyebrow: "Timing",
     summary:
-      "DLSS 5 was officially announced by NVIDIA on March 16, 2026. The current public launch window is fall 2026, and NVIDIA has not yet published a narrower date than that.",
+      "DLSS 5 does not have an exact launch day yet. NVIDIA announced it on March 16, 2026, and the current public rollout window is fall 2026.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["DLSS 5 release date", "when is DLSS 5 coming out", "DLSS 5 launch date"],
     keyFacts: [
@@ -492,14 +496,14 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "The exact dates that matter",
+        title: "When is DLSS 5 coming out?",
         paragraphs: [
-          "The only precise public date tied to DLSS 5 today is March 16, 2026, the date NVIDIA unveiled the feature in its GTC 2026 press release.",
-          "For availability, NVIDIA's wording is still broad: DLSS 5 will arrive in fall 2026. That means any site claiming a precise shipping day is going beyond the company's public statement.",
+          "The only exact public date tied to DLSS 5 right now is March 16, 2026, the day NVIDIA unveiled it during GTC 2026.",
+          "For release timing, NVIDIA's current wording is still broad: DLSS 5 is coming in fall 2026. Any site claiming a precise shipping day is going beyond the official public statement.",
         ],
       },
       {
-        title: "What has been announced before launch",
+        title: "What NVIDIA has confirmed before launch",
         paragraphs: [
           "Even without an exact release day, NVIDIA has already named nine partners and an initial lineup of announced games. That is a stronger signal than a vague teaser, but it is still not the same thing as live public availability.",
           "The best interpretation today is that DLSS 5 has crossed from rumor to official roadmap, while final game-by-game updates remain ahead of players.",
@@ -511,7 +515,7 @@ export const articlePages: ArticlePage[] = [
         ],
       },
       {
-        title: "What remains unconfirmed",
+        title: "What still has no exact date",
         paragraphs: [
           "NVIDIA has not yet published a complete rollout calendar, a final hardware support matrix, or a definitive list of which launch games will enable DLSS 5 on day one.",
           "That means the safest editorial posture is to distinguish between what is announced, what is scheduled, and what is already in players' hands.",
@@ -527,12 +531,12 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-features",
     navTitle: "Features",
     title: "DLSS 5 Features",
-    metaTitle: "DLSS 5 Features: Official Key Changes",
+    metaTitle: "DLSS 5 Features: What NVIDIA Announced",
     description:
-      "Official DLSS 5 features from NVIDIA: neural rendering, photoreal materials, masking controls, 4K real-time output, and Streamline integration.",
+      "DLSS 5 features include neural rendering, photoreal lighting and materials, masking controls, real-time 4K output, and Streamline integration.",
     eyebrow: "Features",
     summary:
-      "NVIDIA's public feature story for DLSS 5 centers on photoreal lighting and materials, frame-to-frame consistency, detailed artist controls, and compatibility with the existing Streamline integration path.",
+      "The main DLSS 5 features NVIDIA emphasizes are photoreal lighting, richer material detail, artist controls, and frame-to-frame consistency inside a real-time pipeline.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["DLSS 5 features", "DLSS 5 lighting", "DLSS 5 materials"],
     keyFacts: [
@@ -543,21 +547,21 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "The visual features NVIDIA leads with",
+        title: "What are the main DLSS 5 features?",
         paragraphs: [
           "The headline features are photoreal lighting and material response. NVIDIA specifically calls out hard rendering problems such as skin, hair, fabric, and other surfaces where believable light behavior makes a huge difference.",
           "This is why DLSS 5 feels like a different category of announcement from past DLSS upgrades. The company is selling a final-image improvement story, not only a faster rendering story.",
         ],
       },
       {
-        title: "Controls matter as much as raw model quality",
+        title: "Why developer controls matter",
         paragraphs: [
           "NVIDIA says DLSS 5 gives developers controls for intensity, masking, and color grading. That is an important implementation detail because studios need selective control over where the effect appears and how strongly it is applied.",
           "A technology like this only works commercially if artists can preserve a game's style rather than flatten it into one neural rendering look.",
         ],
       },
       {
-        title: "The feature story still depends on the shipping stack",
+        title: "Which DLSS 5 features players may see first",
         paragraphs: [
           "DLSS 5 is also described as using the same Streamline framework as current DLSS integrations. That suggests developers should be able to experiment inside a familiar deployment path.",
           "In practice, the real-world feature set players see first will depend on which games ship early, which controls developers expose, and how conservative each studio is about visual tuning.",
@@ -573,12 +577,12 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-neural-rendering",
     navTitle: "Neural Rendering",
     title: "DLSS 5 Neural Rendering",
-    metaTitle: "DLSS 5 Neural Rendering Explained",
+    metaTitle: "DLSS 5 Neural Rendering: How It Works",
     description:
-      "See how NVIDIA describes DLSS 5 neural rendering, from color and motion vector inputs to scene understanding and frame-consistent photoreal output.",
+      "DLSS 5 neural rendering uses color data and motion vectors to create more photoreal lighting and materials, according to NVIDIA.",
     eyebrow: "Technology",
     summary:
-      "According to NVIDIA, DLSS 5 analyzes each frame's color and motion information, learns scene semantics such as skin and fabric behavior, and then produces a more photoreal result while staying grounded in the source 3D scene.",
+      "NVIDIA says DLSS 5 neural rendering takes color data and motion vectors from the game, understands scene context, and produces more photoreal lighting and material detail in real time.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["DLSS 5 neural rendering", "DLSS 5 color vectors", "DLSS 5 real-time AI rendering"],
     keyFacts: [
@@ -589,14 +593,14 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "The official input-output story",
+        title: "How does DLSS 5 neural rendering work?",
         paragraphs: [
           "NVIDIA says DLSS 5 starts with each frame's color data and motion vectors, then uses a neural model to improve how light and materials appear in the image.",
           "That makes DLSS 5 look less like a post-process filter and more like a learned rendering stage that operates on top of game-engine information.",
         ],
       },
       {
-        title: "Why NVIDIA keeps talking about scene semantics",
+        title: "Why NVIDIA keeps emphasizing scene semantics",
         paragraphs: [
           "The launch materials say the model learns scene semantics such as characters, hair, fabric, translucent skin, and lighting conditions. That language is meant to explain why the output should look more physically convincing than simple rule-based heuristics.",
           "NVIDIA also says the model can infer these relationships from a single frame, which is a notable claim because it suggests the system can keep up with interactive workloads instead of relying on heavy temporal analysis alone.",
@@ -621,12 +625,12 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-supported-games",
     navTitle: "Supported Games",
     title: "DLSS 5 Supported Games",
-    metaTitle: "DLSS 5 Supported Games: Official List",
+    metaTitle: "DLSS 5 Supported Games: Official List So Far",
     description:
-      "A clean list of every game NVIDIA has publicly named for DLSS 5 so far, plus notes on what confirmed support actually means.",
+      "See the DLSS 5 games NVIDIA has publicly named so far, including Starfield, Assassin's Creed Shadows, Hogwarts Legacy, and more.",
     eyebrow: "Games",
     summary:
-      "As of March 21, 2026, NVIDIA has publicly named an initial wave of DLSS 5 games that includes Starfield, Assassin's Creed Shadows, Hogwarts Legacy, Resident Evil Requiem, and more.",
+      "As of March 21, 2026, NVIDIA has publicly named more than 15 DLSS 5 games, including Starfield, Assassin's Creed Shadows, Hogwarts Legacy, and Resident Evil Requiem.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["DLSS 5 supported games", "games with DLSS 5", "DLSS 5 game list"],
     keyFacts: [
@@ -637,14 +641,14 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "What counts as confirmed support right now",
+        title: "Which games support DLSS 5 right now?",
         paragraphs: [
           "For this site, confirmed means NVIDIA has publicly named the game in its official launch materials. That is a higher bar than rumor, but it still does not mean every update is already available to players.",
           "A few titles carry even stronger confirmation because partner executives referenced them directly, including Starfield, Resident Evil Requiem, and Assassin's Creed Shadows.",
         ],
       },
       {
-        title: "How to read the current list",
+        title: "How to read the current DLSS 5 games list",
         paragraphs: [
           "This is an announcement-phase list. It is best read as a roadmap snapshot of NVIDIA's first wave, not a final compatibility database.",
           "The most responsible way to track these games is to separate named launch-list titles from later shipping confirmations once actual patches go live.",
@@ -666,12 +670,12 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-confirmed-partners",
     navTitle: "Confirmed Partners",
     title: "DLSS 5 Confirmed Partners",
-    metaTitle: "DLSS 5 Confirmed Partners: Official Studio List",
+    metaTitle: "DLSS 5 Partners: Official Studio List",
     description:
-      "Track the publishers and studios NVIDIA has publicly named as DLSS 5 partners, including Bethesda, CAPCOM, Ubisoft, and Warner Bros. Games.",
+      "NVIDIA has publicly named DLSS 5 partners including Bethesda, CAPCOM, Ubisoft, Tencent, and Warner Bros. Games.",
     eyebrow: "Ecosystem",
     summary:
-      "NVIDIA's first DLSS 5 reveal named a broad cross-section of publishers and developers, showing that the feature is being positioned as an ecosystem rollout rather than a single-tech demo.",
+      "NVIDIA announced DLSS 5 with an initial partner list that spans major publishers and studios, signaling that the rollout is intended to extend across the existing game ecosystem.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["DLSS 5 partners", "Bethesda DLSS 5", "CAPCOM DLSS 5", "Ubisoft DLSS 5"],
     keyFacts: [
@@ -682,14 +686,14 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "The partner list is part of the story",
+        title: "Which companies are confirmed DLSS 5 partners?",
         paragraphs: [
           "DLSS 5 is not being introduced as a speculative lab project. NVIDIA attached the reveal to a concrete set of partners across major publishers and regional studios, which makes the launch feel materially closer to a real ecosystem rollout.",
           "That breadth matters for SEO intent too. Many users searching DLSS 5 are really asking whether the technology has real studio support yet. On that question, the answer is yes.",
         ],
       },
       {
-        title: "Which partner signals are strongest",
+        title: "Which DLSS 5 partner signals are strongest?",
         paragraphs: [
           "Bethesda, CAPCOM, and Ubisoft provided the strongest public support because NVIDIA published executive quotes tied to the launch. The remaining named partners are still meaningful because they appear in the official partner list even without extra commentary.",
           "This should be treated as a commitment signal, not a guarantee of simultaneous launch timing across all partners.",
@@ -706,12 +710,12 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-vs-dlss-4-5",
     navTitle: "DLSS 5 vs 4.5",
     title: "DLSS 5 vs DLSS 4.5",
-    metaTitle: "DLSS 5 vs DLSS 4.5: Key Differences",
+    metaTitle: "DLSS 5 vs DLSS 4.5: Biggest Differences",
     description:
-      "Compare DLSS 5 and DLSS 4.5 across positioning, rendering goals, inputs, integration, and launch status using NVIDIA's own 2026 language.",
+      "Compare DLSS 5 vs DLSS 4.5 across rendering goals, launch status, developer integration, and NVIDIA's 2026 messaging.",
     eyebrow: "Comparison",
     summary:
-      "DLSS 4.5 is the immediate shipping-era baseline NVIDIA highlighted in early 2026, while DLSS 5 is the next announced step that pushes DLSS beyond performance into photoreal neural rendering.",
+      "DLSS 4.5 is NVIDIA's current shipping-era baseline, while DLSS 5 is the next announced step focused on neural rendering, photoreal lighting, and material realism.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["DLSS 5 vs DLSS 4.5", "DLSS 4.5 comparison", "DLSS 5 upgrade"],
     keyFacts: [
@@ -722,14 +726,14 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "Why this is the most useful comparison",
+        title: "DLSS 5 vs DLSS 4.5: what changes?",
         paragraphs: [
           "For people tracking what changed in 2026, DLSS 4.5 is the right baseline. It is the version NVIDIA talked about immediately before unveiling DLSS 5, and it helps separate normal incremental DLSS progress from the larger shift claimed for DLSS 5.",
           "In simple terms, DLSS 4.5 sounds like the most advanced form of the existing stack, while DLSS 5 sounds like the beginning of a new rendering stage.",
         ],
       },
       {
-        title: "What did not reset between generations",
+        title: "What stays the same between DLSS 4.5 and DLSS 5",
         paragraphs: [
           "NVIDIA still ties DLSS 5 to the same integration framework and still talks about real-time constraints, which implies continuity in how developers adopt it.",
           "That continuity is important. DLSS 5 only matters commercially if it extends the DLSS ecosystem instead of breaking it into a separate experimental branch.",
@@ -747,12 +751,12 @@ export const articlePages: ArticlePage[] = [
     href: "/dlss-5-vs-dlss-4",
     navTitle: "DLSS 5 vs 4",
     title: "DLSS 5 vs DLSS 4",
-    metaTitle: "DLSS 5 vs DLSS 4: What's Different?",
+    metaTitle: "DLSS 5 vs DLSS 4: Main Differences",
     description:
-      "A higher-level comparison for people searching DLSS 5 vs DLSS 4, with notes on where DLSS 4.5 fits into the picture.",
+      "DLSS 5 vs DLSS 4 is the broad generation comparison. This page explains the current shipping stack, the upcoming DLSS 5 shift, and where DLSS 4.5 fits.",
     eyebrow: "Comparison",
     summary:
-      "DLSS 4 is still the broad generation label many people know, but DLSS 5 is the newly announced step in NVIDIA's roadmap that emphasizes neural rendering and photoreal fidelity rather than only performance.",
+      "DLSS 4 is the current shipping generation, while DLSS 5 is the announced next step in NVIDIA's roadmap. In practice, most technical comparisons are really DLSS 5 vs DLSS 4.5.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["DLSS 5 vs DLSS 4", "DLSS 4 vs DLSS 5", "NVIDIA DLSS generation comparison"],
     keyFacts: [
@@ -763,7 +767,7 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "Why people still search DLSS 5 vs DLSS 4",
+        title: "DLSS 5 vs DLSS 4: what do people mean?",
         paragraphs: [
           "Many users do not search for point releases. They search for the big number they remember. That makes DLSS 5 vs DLSS 4 a valid and useful comparison page even though DLSS 4.5 is the tighter technical baseline.",
           "This page should answer the broad question first, then explain where the more precise DLSS 4.5 comparison fits in.",
@@ -790,10 +794,10 @@ export const articlePages: ArticlePage[] = [
     title: "DLSS 5 FAQ",
     metaTitle: "DLSS 5 FAQ: Release Date, Games, Support",
     description:
-      "Source-backed answers on DLSS 5 official status, release timing, supported games, compatibility uncertainty, and DLSS 4.5 comparisons.",
+      "Answers to common DLSS 5 questions about the release date, supported games, hardware uncertainty, and DLSS 4.5 comparisons.",
     eyebrow: "FAQ",
     summary:
-      "This FAQ consolidates the highest-intent DLSS 5 questions into short, source-backed answers built from NVIDIA's current public information.",
+      "This DLSS 5 FAQ answers the most common questions about launch timing, supported games, hardware uncertainty, and what NVIDIA has officially confirmed so far.",
     updatedAt: SITE_LAST_UPDATED,
     keywords: ["DLSS 5 FAQ", "is DLSS 5 real", "DLSS 5 release date FAQ"],
     keyFacts: [
@@ -804,7 +808,7 @@ export const articlePages: ArticlePage[] = [
     ],
     sections: [
       {
-        title: "How to use this FAQ",
+        title: "What this DLSS 5 FAQ covers",
         paragraphs: [
           "These answers stay inside NVIDIA's current public statements. If NVIDIA publishes new compatibility details, launch schedules, or shipped game confirmations, this page should be updated with those exact dates and titles.",
           "Until then, the FAQ separates official facts from reasonable inference so the site can rank without drifting into rumor content.",

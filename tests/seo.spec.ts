@@ -6,19 +6,19 @@ test("homepage exposes the core keyword and descriptive internal links", async (
   await page.goto("/");
 
   await expect(page).toHaveTitle(
-    "DLSS 5 Guide, Release Date, Supported Games, and FAQ"
+    "DLSS 5 Guide: Release Date, Supported Games, FAQ"
   );
   await expect(
     page.getByRole("heading", {
       level: 1,
-      name: "DLSS 5 guide: release date, games, and what NVIDIA announced.",
+      name: "DLSS 5 guide: release date, supported games, and FAQ.",
     })
   ).toBeVisible();
   await expect(
-    page.getByRole("link", { name: "Read what DLSS 5 is" })
+    page.getByRole("link", { name: "What Is DLSS 5?", exact: true })
   ).toBeVisible();
   await expect(
-    page.getByRole("link", { name: "See supported DLSS 5 games" })
+    page.getByRole("link", { name: "DLSS 5 Supported Games", exact: true })
   ).toBeVisible();
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     "href",
@@ -50,8 +50,8 @@ test("key pages keep shorter titles and descriptive related links", async ({
   }
 
   await page.goto("/what-is-dlss-5");
-  await expect(page.getByText("Read Features")).toBeVisible();
-  await expect(page.getByText("Read Neural Rendering")).toBeVisible();
+  await expect(page.getByText("Read DLSS 5 Features")).toBeVisible();
+  await expect(page.getByText("Read DLSS 5 Neural Rendering")).toBeVisible();
   await expect(page.getByText("Open page")).toHaveCount(0);
 });
 
@@ -69,7 +69,6 @@ test("homepage injects the updated Microsoft Clarity loader", async ({
 
 test("homepage exposes the new brand mark and icon assets", async ({
   page,
-  request,
 }) => {
   await page.goto("/", { waitUntil: "networkidle" });
 
@@ -91,8 +90,16 @@ test("homepage exposes the new brand mark and icon assets", async ({
     await appleIconLink.first().getAttribute("href"),
   ].filter((value): value is string => Boolean(value));
 
-  for (const path of assetPaths) {
-    const response = await request.get(path);
-    expect(response.ok(), `${path} should resolve`).toBeTruthy();
+  const assetStatuses = await page.evaluate(async (paths: string[]) => {
+    return Promise.all(
+      paths.map(async (path) => {
+        const response = await fetch(path);
+        return { ok: response.ok, path };
+      })
+    );
+  }, assetPaths);
+
+  for (const asset of assetStatuses) {
+    expect(asset.ok, `${asset.path} should resolve`).toBeTruthy();
   }
 });

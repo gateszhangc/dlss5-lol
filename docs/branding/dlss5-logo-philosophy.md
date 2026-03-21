@@ -1,0 +1,11 @@
+# Neural Aperture
+
+Neural Aperture treats brand identity as a controlled opening through which impossible image data becomes believable. Form should feel engineered rather than decorative: hard-edged geometry, measured curvature, and one decisive numeral acting like a gate for light, motion, and inference. The result must read instantly, but also suggest hidden depth, as if the mark were distilled from a much larger rendering system by someone with painstaking attention to signal, proportion, and negative space.
+
+Color is used like calibrated instrumentation, not decoration. The palette should stay anchored in dark graphite greens, ionized lime, and restrained pale highlights so the work feels technical, current, and meticulously crafted. Brightness must appear concentrated, as though illumination were emitted by a neural core rather than painted on the surface. Every transition should feel labored over with master-level execution, with no accidental softness and no generic gaming excess.
+
+Rhythm comes from orbit, scan, and sampling. Curves should imply a sweep or trace, while straight segments provide determinism and lock. Small accents may echo pixels, data points, or frame-stable markers, but they must remain sparse so the mark keeps its authority at favicon scale. This is not chaos, not speed lines, not spectacle. It is the product of deep expertise making complexity feel inevitable and calm.
+
+Composition must privilege legibility first and sophistication second, never sacrificing one for the other. The central figure should survive severe reduction, while the surrounding system hints at neural rendering, radar, and aperture mechanics without announcing any one metaphor too loudly. The piece should look as if it took countless hours to refine: balanced margins, disciplined weight contrast, and deliberate asymmetry tuned with painstaking care.
+
+Typography, when present, should act as quiet instrumentation beside the symbol. The mark carries the drama; the wordmark confirms precision. Words remain sparse, sharp, and controlled, allowing the visual system to communicate most of the meaning. The finished identity should feel pristine, elite, and exacting, like a research artifact or flagship launch emblem completed by someone at the top of their field.

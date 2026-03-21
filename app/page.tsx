@@ -38,9 +38,9 @@ import {
 import { buttonVariants } from "@/lib/button-variants";
 
 export const metadata = createMetadata({
-  title: "DLSS 5 Guide, Release Date, Supported Games, and FAQ",
+  title: "DLSS 5 Guide: Release Date, Supported Games, FAQ",
   description:
-    "A source-backed DLSS 5 guide covering release timing, neural rendering, official features, announced games, and DLSS 4.5 comparisons.",
+    "Track the DLSS 5 release date, supported games, features, and FAQ using NVIDIA's official March 2026 announcement and follow-up sources.",
   path: "/",
   keywords: ["DLSS 5 guide", "DLSS 5 overview", "DLSS 5 FAQ"],
   type: "website",
@@ -64,14 +64,14 @@ export default function HomePage() {
               </div>
 
               <h1 className="mt-5 font-heading text-4xl font-semibold tracking-tight text-balance sm:text-5xl lg:text-7xl">
-                DLSS 5 guide: release date, games, and what NVIDIA announced.
+                DLSS 5 guide: release date, supported games, and FAQ.
               </h1>
 
               <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-                NVIDIA unveiled DLSS 5 on March 16, 2026 and framed it as a
-                real-time neural rendering leap. This site is built to answer the
-                highest-intent questions around release timing, features, partner
-                support, and the shift from DLSS 4.5.
+                Looking for the DLSS 5 release date, supported games, or
+                official feature list? This guide tracks what NVIDIA announced
+                on March 16, 2026, what is confirmed for fall 2026, and what
+                remains unconfirmed.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -82,7 +82,7 @@ export default function HomePage() {
                     "rounded-full px-5"
                   )}
                 >
-                  Read what DLSS 5 is
+                  What Is DLSS 5?
                 </Link>
                 <Link
                   href="/dlss-5-supported-games"
@@ -91,7 +91,7 @@ export default function HomePage() {
                     "rounded-full px-5"
                   )}
                 >
-                  See supported DLSS 5 games
+                  DLSS 5 Supported Games
                 </Link>
               </div>
 
@@ -143,7 +143,7 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <p className="eyebrow">Route atlas</p>
             <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              A 10-page content structure built for DLSS 5 search intent.
+              A 10-page content hub built around DLSS 5 search intent.
             </h2>
           </div>
 
@@ -163,7 +163,7 @@ export default function HomePage() {
                     href={page.href}
                     className="inline-flex items-center gap-2 text-sm font-medium text-primary"
                   >
-                    Read {page.navTitle} <ArrowRight className="size-4" />
+                    Read {page.title} <ArrowRight className="size-4" />
                   </Link>
                 </CardContent>
               </Card>
@@ -179,7 +179,7 @@ export default function HomePage() {
                 <span className="eyebrow text-primary">Comparison shorthand</span>
               </div>
               <CardTitle className="text-3xl">
-                The easiest way to think about DLSS 5 vs DLSS 4.5
+                DLSS 5 vs DLSS 4.5 at a glance
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 pt-0 text-base leading-8 text-muted-foreground">
@@ -199,7 +199,7 @@ export default function HomePage() {
                   "mt-2 rounded-full px-4"
                 )}
               >
-                Read the full comparison
+                Compare DLSS 5 vs DLSS 4.5
               </Link>
             </CardContent>
           </Card>
@@ -238,7 +238,7 @@ export default function HomePage() {
                 <Swords className="size-5" />
                 <span className="eyebrow text-primary">FAQ</span>
               </div>
-              <CardTitle className="text-3xl">The fastest answers to the biggest DLSS 5 questions</CardTitle>
+              <CardTitle className="text-3xl">Quick answers to the top DLSS 5 questions</CardTitle>
               <CardDescription>
                 Built from the official launch materials and current NVIDIA messaging.
               </CardDescription>
@@ -270,7 +270,7 @@ export default function HomePage() {
           <Card className="surface-card">
             <CardHeader>
               <CardDescription>Primary sources</CardDescription>
-              <CardTitle className="text-3xl">Every key claim points back to NVIDIA.</CardTitle>
+              <CardTitle className="text-3xl">Every important claim traces back to NVIDIA.</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 pt-0">
               {SITE_SOURCES.map((source) => (

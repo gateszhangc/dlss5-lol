@@ -315,7 +315,7 @@ export function ArticlePageView({ page }: ArticlePageViewProps) {
                         {relatedPage.description}
                       </p>
                       <span className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-primary">
-                        Read {relatedPage.navTitle}{" "}
+                        Read {relatedPage.title}{" "}
                         <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                       </span>
                     </Link>
@@ -331,7 +331,7 @@ export function ArticlePageView({ page }: ArticlePageViewProps) {
                 "w-full rounded-full"
               )}
             >
-              Jump to FAQ
+              Read DLSS 5 FAQ
             </Link>
           </aside>
         </div>

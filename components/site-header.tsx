@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Radar } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import { primaryNavigation, SITE_NAME } from "@/content/site";
 import { cn } from "@/lib/utils";
@@ -23,9 +24,16 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/80 backdrop-blur-xl">
       <div className="shell flex min-h-18 items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-3">
-          <span className="flex size-11 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-[0_12px_30px_-18px_color-mix(in_oklab,var(--color-primary)_80%,transparent)]">
-            <Radar className="size-5" />
-          </span>
+          <Image
+            src="/brand/dlss5-mark.svg"
+            alt=""
+            width={44}
+            height={44}
+            aria-hidden="true"
+            priority
+            unoptimized
+            className="size-11 shrink-0"
+          />
           <span className="flex flex-col">
             <span className="font-heading text-[0.72rem] uppercase tracking-[0.28em] text-muted-foreground">
               Independent tracker
