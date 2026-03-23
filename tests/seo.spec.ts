@@ -39,8 +39,11 @@ test("homepage exposes the core keyword and descriptive internal links", async (
     page.getByText("DLSS 5 Supported Games Announced So Far")
   ).toBeVisible();
   await expect(
-    page.getByRole("link", { name: "What Is DLSS 5?", exact: true })
+    page.getByRole("link", { name: "One-click deploy", exact: true })
   ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "One-click deploy", exact: true })
+  ).toHaveAttribute("href", "https://www.easyclaw.pro");
   await expect(
     page.getByRole("link", { name: "DLSS 5 Supported Games", exact: true })
   ).toBeVisible();

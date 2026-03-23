@@ -76,13 +76,13 @@ export default function HomePage() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/what-is-dlss-5"
+                  href="https://www.easyclaw.pro"
                   className={cn(
                     buttonVariants({ size: "lg" }),
                     "rounded-full px-5"
                   )}
                 >
-                  What Is DLSS 5?
+                  One-click deploy
                 </Link>
                 <Link
                   href="/dlss-5-supported-games"
